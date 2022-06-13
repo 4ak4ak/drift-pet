@@ -18,7 +18,7 @@ LazyDatabase _openConnection(){
   });
 }
 
-@DriftDatabase(tables: [Employee])
+@DriftDatabase(tables: [FitClub])
 class MyDatabase extends _$MyDatabase {
   // we tell the database where to store the data with this constructor
   MyDatabase() : super(_openConnection());

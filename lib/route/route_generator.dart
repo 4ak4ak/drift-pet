@@ -9,8 +9,8 @@ class RouteGenerator{
     switch(settings.name){
       case'/':
         return MaterialPageRoute(builder:(_) =>   HomeScreen());
-      case '/add_employee':
-        return MaterialPageRoute(builder: (_) => AddEmployeeScreen());
+      case '/add_club':
+        return MaterialPageRoute(builder: (_) => AddClubScreen());
       default:
         return _errorRoute();
 

@@ -177,7 +177,7 @@ class EmployeeCompanion extends UpdateCompanion<EmployeeData> {
   }
 }
 
-class $EmployeeTable extends Employee
+class $EmployeeTable extends FitClub
     with TableInfo<$EmployeeTable, EmployeeData> {
   @override
   final GeneratedDatabase attachedDatabase;

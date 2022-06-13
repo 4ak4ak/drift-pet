@@ -3,12 +3,12 @@ import 'package:drift/drift.dart' as drift;
 import '../db/app_db.dart';
 import '../widget/custom_text_form_field.dart';
 
-class AddEmployeeScreen extends StatefulWidget {
+class AddClubScreen extends StatefulWidget {
   @override
-  _AddEmployeeScreenState createState() => _AddEmployeeScreenState();
+  _AddClubScreenState createState() => _AddClubScreenState();
 }
 
-class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
+class _AddClubScreenState extends State<AddClubScreen> {
   // ignore: prefer_final_fields
   TextEditingController _titleController =  TextEditingController();
   TextEditingController _contentConroller =  TextEditingController();
@@ -24,7 +24,7 @@ class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-      title: const  Text("Add Employee"),
+      title: const  Text("Add fitness club"),
       centerTitle: true,
       actions: [
         IconButton(

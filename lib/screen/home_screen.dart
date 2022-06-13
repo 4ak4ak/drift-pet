@@ -16,10 +16,10 @@ class HomeScreen extends StatelessWidget {
       ),
       floatingActionButton:  FloatingActionButton.extended(
           onPressed:(){
-            Navigator.pushNamed(context, '/add_employee');
+            Navigator.pushNamed(context, '/add_club');
           },
           icon: Icon(Icons.add),
-          label: Text('Add Employee')),
+          label: Text('Add fitness club')),
     );
 
   }
