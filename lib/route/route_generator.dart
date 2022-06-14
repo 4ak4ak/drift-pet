@@ -1,20 +1,28 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_drift/screen/edit_employee_screen.dart';
 import '../screen/add_employee_screen.dart';
 import '../screen/home_screen.dart';
 
-
 class RouteGenerator{
-  static  Route<dynamic> generateRoute(RouteSettings settings){
+
+  static  Route<dynamic>? generateRoute(RouteSettings settings){
+    final args = settings.arguments;
     switch(settings.name){
       case'/':
         return MaterialPageRoute(builder:(_) =>   HomeScreen());
       case '/add_club':
         return MaterialPageRoute(builder: (_) => AddClubScreen());
+      case '/edit_club':
+        if(args is int){
+          return MaterialPageRoute(builder: (_) => EditClubScreen(id: args));
+        }
+        break;
+
       default:
         return _errorRoute();
 
     }
+    return null;
   }
   static Route<dynamic>_errorRoute(){
     return MaterialPageRoute(builder: (_){

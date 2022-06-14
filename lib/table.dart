@@ -1,5 +1,5 @@
 import 'package:drift/drift.dart';
-import 'dart:ffi';
+
 class FitClub extends Table {
   IntColumn get id => integer().autoIncrement()();
   TextColumn get title => text().named('title')();

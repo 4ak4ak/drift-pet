@@ -4,10 +4,12 @@ import 'package:flutter_drift/screen/home_screen.dart';
 
 
 void main (){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
-      home:  HomeScreen(),
+      home:  const HomeScreen(),
     );
   }
 }
